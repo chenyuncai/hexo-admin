@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jaredly/hexo-admin.git"
+    "url": "https://github.com/chenyuncai/hexo-admin.git"
   },
   "keywords": [
     "hexo",
@@ -16,7 +16,7 @@
     "dashboard",
     "plugin"
   ],
-  "author": "Jared Forsyth <jared@jaredforsyth.com>",
+  "author": "Ray Chen <ray_chenyuncai@163.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jaredly/hexo-admin/issues"

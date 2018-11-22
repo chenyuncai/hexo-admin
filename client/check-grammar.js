@@ -32,7 +32,7 @@ var suggestionContents = function (suggestions) {
   if (suggestions.length === 0) {
     var golden = {color: 'gold'};
     contents = (<div className='grammar_box'>
-      <p className='grammar_reason'><i style={golden} className="fa fa-star"></i>&nbsp;Nice! No possible improvements were found!</p>
+      <p className='grammar_reason'><i style={golden} className="fa fa-star"></i>&nbsp;没有错误!</p>
     </div>)
   } else {
     suggestions.forEach(function (suggestion, i) {
@@ -68,16 +68,12 @@ var CheckGrammar = React.createClass({
   },
 
   render: function () {
-    var creditStyle = {
-      'margin-top': '-24px'
-    }
     return (<div className='post-content editor_rendered'>
-      <h2>Writing Suggestions</h2>
-      <p style={creditStyle}>Brought to you by <a href='https://github.com/btford/write-good' target='_blank'>write-good</a>.</p>
+      <h2>写作建议</h2>
       {this.state.suggestions}
       <button onClick={this.props.toggleGrammar}
               className='pb-button grammar_backToPreview'>
-      Back to Preview
+      返回预览
       </button>
     </div>)
   }

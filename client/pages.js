@@ -65,7 +65,7 @@ var Pages = React.createClass({
                 {page.title}
               </span>
               <span className="posts_post-date">
-                {moment(page.date).format('MMM Do YYYY')}
+                {moment(page.date).format('YYYY-MM-DD')}
               </span>
               <a className='posts_perma-link' target="_blank" href={rootPath + '/' + page.path}>
                 <i className='fa fa-link'/>
