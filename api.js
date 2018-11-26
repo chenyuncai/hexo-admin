@@ -200,16 +200,16 @@ module.exports = function (app, hexo) {
   use('pages/new', function (req, res, next) {
     if (req.method !== 'POST') return next()
     if (!req.body) {
-      return res.send(400, 'No page body given');
+      return res.send(400, '请填写页面内容');
     }
     if (!req.body.title) {
-      return res.send(400, 'No title given');
+      return res.send(400, '请填写页面标题');
     }
 
     hexo.post.create({title: req.body.title, layout: 'page', date: new Date()})
     .error(function(err) {
       console.error(err, err.stack)
-      return res.send(500, 'Failed to create page')
+      return res.send(500, '创建页面失败')
     })
     .then(function (file) {
       var source = file.path.slice(hexo.source_dir.length)
@@ -275,7 +275,7 @@ module.exports = function (app, hexo) {
       return res.send(400, 'No title given');
     }
 
-    var postParameters = {title: req.body.title, layout: 'draft', date: new Date(), author: hexo.config.author};
+    var postParameters = {title: req.body.title, keywords: req.body.title, layout: 'draft', date: new Date(), author: hexo.config.author};
     extend(postParameters, hexo.config.metadata || {});
     hexo.post.create(postParameters)
     .error(function(err) {

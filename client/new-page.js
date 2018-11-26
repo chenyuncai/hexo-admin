@@ -17,7 +17,6 @@ var NewPage = React.createClass({
   },
 
   componentDidUpdate: function (prevProps, prevState) {
-
     if (this.state.showing && !prevState.showing) {
       var node = this.refs.input.getDOMNode()
       node.focus()
@@ -68,7 +67,7 @@ var NewPage = React.createClass({
       return <div className="new-post" onClick={this._onShow}>
         <div className="new-post_button">
           <i className="fa fa-plus"/>{' '}
-          新建页面（请联系提供商添加页面入口）
+          新建页面
         </div>
       </div>
     }

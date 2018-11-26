@@ -1,6 +1,6 @@
 {
-  "name": "hexo-admin",
-  "version": "2.3.0",
+  "name": "hexo-admin-lbwy",
+  "version": "2.3.6",
   "description": "Adds an admin section to the hexo server",
   "main": "index.js",
   "scripts": {
@@ -19,9 +19,9 @@
   "author": "Ray Chen <ray_chenyuncai@163.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jaredly/hexo-admin/issues"
+    "url": "https://github.com/chenyuncai/hexo-admin/issues"
   },
-  "homepage": "http://jaredly.github.io/hexo-admin/",
+  "homepage": "http://qianjunet.com",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.5.0",
@@ -47,6 +47,7 @@
     "gulp-less": "^3.0.5",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.7",
     "less": "^2.6.1",
     "lodash": "^2.4.1",

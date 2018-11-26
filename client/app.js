@@ -6,7 +6,9 @@ var App = React.createClass({
   render: function () {
     return <div className="app">
       <div className="app_header">
-        <span className="app_title">来勃物业</span>
+        <span className="app_title">
+          <a href="/" className="app_title_text">来勃物业</a>
+        </span>
         <ul className="app_nav">
           <li><Link to="posts">文章</Link></li>
           <li><Link to="pages">页面</Link></li>

@@ -111,10 +111,10 @@ var Post = React.createClass({
 
   handleRemove: function () {
     var self = this;
-    return confirm('Delete this post?', {
-      description: 'This operation will move current draft into source/_discarded folder.',
-      confirmLabel: 'Yes',
-      abortLabel: 'No'
+    return confirm('确定删除改文章吗?', {
+      description: '该操作会将文件移动到回收站，若需找回，请联系提供商协助',
+      confirmLabel: '确认',
+      abortLabel: '取消'
     }).then(function () {
       api.remove(self.state.post._id).then(
         Router.transitionTo('posts')
